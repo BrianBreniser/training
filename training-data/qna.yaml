@@ -1,0 +1,671 @@
+version: 1
+domain: insurance
+created_by: dtorresf
+seed_examples:
+  - context: |
+      ## Choice Plus plan details, all in one place.
+
+      Use this benefit summary to learn more about this plan's benefits, ways you can get help managing costs and how you may get more out of this health plan.
+
+      | Check out what's included in the plan   | Check out what's included in the plan                                                                                                                                                                            |
+      |-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      |                No                       | Network coverage only You can usually save money when you receive care for covered health care services from network providers.                                                                                  |
+      |                Yes                      | Network and out-of-network benefits You may receive care and services from network and out-of-network providers and facilities - but staying in the network can help lower your costs.                           |
+      |                No                       | Primary care physician (PCP) required With this plan, you need to select a PCP - the doctor who plays a key role in helping manage your care. Each enrolled person on your plan will need to choose a PCP.       |
+      |                No                       | Referrals required You'll need referrals from your PCP before seeing a specialist or getting certain health care services.                                                                                       |
+      |                Yes                      | Preventive care covered at 100% There is no additional cost to you for seeing a network provider for preventive care.                                                                                            |
+      |                Yes                      | Pharmacy benefits With this plan, you have coverage that helps pay for prescription drugs and medications.                                                                                                       |
+      |                Yes                      | Tier 1 providers Using Tier 1 providers may bring you the greatest value from your health care benefits. These PCPs and medical specialists meet national standard benchmarks for quality care and cost savings. |
+      |                No                       | Freestanding centers You may pay less when you use certain freestanding centers - health care facilities that do not bill for services as part of a hospital, such as MRI or surgery centers.                    |
+      |                No                       | Health savings account (HSA) With an HSA, you've got a personal bank account that lets you put money aside, tax-free. Use it to save and pay for qualified medical expenses.                                     |
+
+      This Benefit Summary is to highlight your Benefits. Don't use this document to understand your exact coverage. If this Benefit Summary conflicts with the Certificate of Coverage (COC), Schedule of Benefits, Riders, and/or Amendments, those documents govern. Review your COC for an exact description of the services and supplies that are and are not covered, those which are excluded or limited, and other terms and conditions of coverage.
+    questions_and_answers:
+      - question: what is the plan name?
+        answer: Choice Plus
+      - question: what is the network coverage?
+        answer: Network coverage only
+      - question: what is the network and out-of-network benefits?
+        answer: Network and out-of-network benefits
+      - question: Is the primary care physician (PCP) required?
+        answer: No
+      - question: Are the referrals required?
+        answer: No
+      - question: Is the preventive care covered at 100%?
+        answer: Yes
+      - question: Are there pharmacy benefits?
+        answer: Yes
+      - question: Are the tier 1 providers included?
+        answer: Yes
+      - question: Are freestanding centers covered?
+        answer: No
+      - question: Is the health savings account (HSA) included?
+        answer: No
+      - question: Is this plan CDHP?
+        answer: No
+      - question: why is this plan considrede a NON-CDHP?
+        answer: HSA or HDHP is not included or requested in the plan
+      - question: What is the product type?
+        answer: NON-CDHP
+      - question: What is the plan type?
+        answer: PPO
+      - question: What is the product family?
+        answer: PPO
+      - question: What is the network type?
+        answer: PPO
+      - question: What is the cost-share type for PCP?
+        answer: Copay
+      - question: What is the cost-share for OON PCP?
+        answer: Ded/Coins
+  - context: |
+      ## Here's a more in-depth look at how Choice Plus works.
+
+      ## Medical Benefits
+
+      |                           | In Network   | Out-of-Network   |
+      |---------------------------|--------------|------------------|
+      | Annual Medical Deductible |              |                  |
+      | Individual                | $3,000       | $6,000           |
+      | Family                    | $6,000       | $12,000          |
+
+      All individual deductible amounts will count toward the family deductible, but an individual will not have to pay more than the individual deductible amount.
+
+      You're responsible for paying 100% of your medical expenses until you reach your deductible. For certain covered services, you may be required to pay a fixed dollar amount - your copay.
+
+      | Annual Out-of-Pocket Limit   |         |         |
+      |------------------------------|---------|---------|
+      | Individual                   | $6,350  | $12,700 |
+      | Family                       | $12,700 | $25,400 |
+
+      All individual out-of-pocket maximum amounts will count toward the family out-of-pocket maximum, but an individual will not have to pay more than the individual out-of-pocket maximum amount.
+
+      Once you've met your deductible, you start sharing costs with your plan - coinsurance. You continue paying a portion of the expense until you reach your out-ofpocket limit. From there, your plan pays 100% of allowed amounts for the rest of the plan year.
+    
+    questions_and_answers:
+      - question: What is the annual medical deductible for an individual in-network?
+        answer: $3,000
+      - question: What is the annual medical deductible for an individual out-of-network?
+        answer: $6,000
+      - question: What is the annual medical deductible for a family in-network?
+        answer: $6,000
+      - question: What is the annual medical deductible for a family out-of-network?
+        answer: $12,000
+      - question: What is the annual out-of-pocket limit for an individual in-network?
+        answer: $6,350
+      - question: What is the annual out-of-pocket limit for an individual out-of-network?
+        answer: $12,700
+      - question: What is the annual out-of-pocket limit for a family in-network?
+        answer: $12,700
+      - question: What is the annual out-of-pocket limit for a family out-of-network?
+        answer: $25,400
+      - question: Is this plan embedded?
+        answer: Yes
+      - question: why is this considered an embedded plan?
+        answer: All individual deductible amounts will count toward the family deductible, but an individual will not have to pay more than the individual deductible amount.
+      - question: What is the product family?
+        answer: PPO
+  - context: | 
+      ## What You Pay for Services | Copays ($) and Coinsurance (%) for  Covered Health Care Services                                                                                                                                                                                                                                                                       | Designated Network   | Network   | Out-of-Network   |
+      |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------|------------------|
+      | Preventive Care Services                                                                                                                                                                                                                                                                                                               |                      |           |                  |
+      | Preventive Care Services                                                                                                                                                                                                                                                                                                               |                      | No copay  | 50%*             |
+      | Certain preventive care services are provided as specified by  the Patient Protection and Affordable Care Act (ACA), with no  cost-sharing to you. These services are based on your age,  gender and other health factors. UnitedHealthcare also covers  other routine services that may require a copay, co-insurance  or deductible. |                      |           |                  |
+      | Office Services - Sickness & Injury Primary Care Physician                                                                                                                                                                                                                                                                             |                      |           |                  |
+      | All other covered persons                                                                                                                                                                                                                                                                                                              |                      | $30 copay | 50%*             |
+      | Covered persons less than age 19                                                                                                                                                                                                                                                                                                       |                      | No copay  | 50%*             |
+      | Additional copays, deductible, or co-insurance may apply  when you receive other services at your physician's office. For  example, surgery and lab work.                                                                                                                                                                              |                      |           |                  |
+      | Telehealth is covered at the same cost share as in the office.                                                                                                                                                                                                                                                                         |                      |           |                  |
+
+      *After the Annual Medical Deductible has been met. ¹Prior Authorization Required. Refer to COC/SBN.
+
+    questions_and_answers:
+      - question: What is the company serving this policy?
+        answer: UnitedHealthcare
+      - question: Who is the payer name for this policy?
+        answer: UnitedHealthcare
+      - question: Who is this policy administered by?
+        answer: UnitedHealthcare
+      - question: what is the out of network co-insurance?
+        answer: 50%
+      - question: what is the out of network copay?
+        answer: 50%
+      - question: what is the in network copay?
+        answer: $30
+      - question: what is the OON copay?
+        answer: 50%
+      - question: what is the INN copay?
+        answer: $30
+      - question: What is the INN PCP copay?
+        answer: $30
+      - question: Is there a co-insurance INN PCP?
+        answer: No
+      - question: What is the cost-share for OON PCP?
+        answer: Ded/Coins
+      - question: is there a copay for OON PCP?
+        answer: No
+      - question: What is the coinsurance for OON PCP?
+        answer: 50%
+      - question: what is the costshare for in network virtual visits PCP?
+        answer: copay
+      - question: is there a copay for in network virtual visits PCP?
+        answer: Yes, $30
+      - question: is there a coinsurance for in network virtual visits PCP?
+        answer: No
+      - question: what word is used here for virtual visits PCP?
+        answer: Telehealth
+      - question: what is the costshare for OON virtual visits PCP?
+        answer: Ded/Coins
+      - question: is there a copay for OON virtual visits PCP?
+        answer: No
+      - question: is there a coinsurance for OON virtual visits PCP?
+        answer: Yes, 50%
+  - context: |
+      ## What You Pay for Services
+
+      | Copays ($) and Coinsurance (%) for  Covered Health Care Services                                                                                                                 | Designated Network   | Network                                                                                                                                             | Out-of-Network                                                                                                           |
+      |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+      | Outpatient Care                                                                                                                                                                  |                      |                                                                                                                                                     |                                                                                                                          |
+      | Habilitative Services - Outpatient                                                                                                                                               |                      |                                                                                                                                                     |                                                                                                                          |
+      | Manipulative Treatment                                                                                                                                                           |                      | $30 copay                                                                                                                                           | 50%*                                                                                                                     |
+      | Other habilitative services                                                                                                                                                      |                      | $30 copay                                                                                                                                           | 50%*                                                                                                                     |
+      | Limits will be the same as, and combined with those stated  under Rehabilitation Services - Outpatient Therapy and  Manipulative Treatment.                                      |                      |                                                                                                                                                     |                                                                                                                          |
+      | Home Health Care¹                                                                                                                                                                |                      | 20%*                                                                                                                                                | 50%*                                                                                                                     |
+      | Limited to 60 visits per year.                                                                                                                                                   |                      |                                                                                                                                                     |                                                                                                                          |
+      | One visit equals up to four hours of skilled care services. This  visit limit does not include any service which is billed only for  the administration of intravenous infusion. |                      |                                                                                                                                                     |                                                                                                                          |
+      | Lab, X-Ray and Diagnostic - Outpatient - Lab Testing¹                                                                                                                            | 20%*                 | 50%*                                                                                                                                                | 50%*                                                                                                                     |
+      | Benefits include laboratory services received from a Network  provider that is not a Designated Diagnostic Provider.                                                             |                      | 20%*                                                                                                                                                | 50%*                                                                                                                     |
+      | Lab, X-Ray and Diagnostic - Outpatient - X-Ray and other  Diagnostic Testing¹                                                                                                    |                      |                                                                                                                                                     |                                                                                                                          |
+      |                                                                                                                                                                                  | 20%*                 | You pay a $500 per  occurrence deductible per  service prior to and in  addition to paying any  Annual Deductible and any  coinsurance amount. 50%* | You pay a $500 per  service prior to and in  addition to paying any  Annual Deductible and any  coinsurance amount. 50%* |
+      | Major Diagnostic and Imaging - Outpatient¹                                                                                                                                       |                      |                                                                                                                                                     | occurrence deductible per                                                                                                |
+      | Physician Fees for Surgical and Medical Services                                                                                                                                 |                      | 20%*                                                                                                                                                | 50%*                                                                                                                     |
+      | You may have to pay an extra copay, deductible or  coinsurance for physician fees or pharmaceutical products.                                                                    |                      |                                                                                                                                                     |                                                                                                                          |
+    questions_and_answers:
+      - question: what is the INN coinsurance for physician fees?
+        answer: 20%
+      - question: what is the OON coinsurance for physician fees?
+        answer: 50%
+      - question: what is the in network costshare type for outpatient hospital?
+        answer: Ded/Coins
+      - question: is there a copay for INN outpatient hospital?
+        answer: No
+      - question: is there a coinsurance for INN outpatient hospital?
+        answer: Yes, 20%
+      - question: what is the costshare type for OON outpatient hospital?
+        answer: Ded/Coins
+      - question: is there a copay for OON outpatient hospital?
+        answer: No
+      - question: is there a coinsurance for OON outpatient hospital?
+        answer: Yes, 50%
+  - context: |
+      ## What You Pay for Services
+
+      | Copays ($) and Coinsurance (%) for  Covered Health Care Services                                                                                                                                                                                                                                                                                              | Designated Network                                                                | Network                                                                           | Out-of-Network                                                                    |
+      |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+      | Specialist                                                                                                                                                                                                                                                                                                                                                    |                                                                                   | $60 copay                                                                         | 50%*                                                                              |
+      | Additional copays, deductible, or co-insurance may apply  when you receive other services at your physician's office. For  example, surgery and lab work.                                                                                                                                                                                                     |                                                                                   |                                                                                   |                                                                                   |
+      | Telehealth is covered at the same cost share as in the office.                                                                                                                                                                                                                                                                                                |                                                                                   |                                                                                   |                                                                                   |
+      | Urgent Care Center Services                                                                                                                                                                                                                                                                                                                                   |                                                                                   | $100 copay                                                                        | 50%*                                                                              |
+      | Additional copays, deductible, or co-insurance may apply  when you receive other services at the urgent care facility. For  example, surgery and lab work.                                                                                                                                                                                                    |                                                                                   |                                                                                   |                                                                                   |
+      | Virtual Care Services                                                                                                                                                                                                                                                                                                                                         |                                                                                   | No copay                                                                          | 50%*                                                                              |
+      | Network Benefits are available only when services are  delivered through a Designated Virtual Network Provider. You  can find a Designated Virtual Visit Network Provider by  contacting us at myuhc.com® or the telephone number on  your ID card. Access to Virtual Visits and prescription services  may not be available in all states or for all groups. |                                                                                   |                                                                                   |                                                                                   |
+      | Emergency Care                                                                                                                                                                                                                                                                                                                                                |                                                                                   |                                                                                   |                                                                                   |
+      | Ambulance Services - Emergency Ambulance                                                                                                                                                                                                                                                                                                                      |                                                                                   |                                                                                   |                                                                                   |
+      | Air Ambulance                                                                                                                                                                                                                                                                                                                                                 |                                                                                   | 20%*                                                                              | 20%*                                                                              |
+      | Ground Ambulance                                                                                                                                                                                                                                                                                                                                              |                                                                                   | 20%*                                                                              | 20%*                                                                              |
+      | Ambulance Services - Non-Emergency Ambulance¹                                                                                                                                                                                                                                                                                                                 |                                                                                   |                                                                                   |                                                                                   |
+      | Air Ambulance                                                                                                                                                                                                                                                                                                                                                 |                                                                                   | 20%*                                                                              | 20%*                                                                              |
+      | Ground Ambulance                                                                                                                                                                                                                                                                                                                                              |                                                                                   | 20%*                                                                              | 50%*                                                                              |
+      | Dental Services - Accident Only                                                                                                                                                                                                                                                                                                                               |                                                                                   | 20%*                                                                              | 20%*                                                                              |
+      | Emergency Health Care Services - Outpatient¹                                                                                                                                                                                                                                                                                                                  |                                                                                   | $350 copay                                                                        | $350 copay                                                                        |
+      |                                                                                                                                                                                                                                                                                                                                                               |                                                                                   |                                                                                   | 50%*                                                                              |
+      | Habilitative Services - Inpatient¹                                                                                                                                                                                                                                                                                                                            | The amount you pay is based on where the covered health care service is provided. | The amount you pay is based on where the covered health care service is provided. | The amount you pay is based on where the covered health care service is provided. |
+      | Limit will be the same as, and combined with, those stated  under Skilled Nursing Facility/Inpatient Rehabilitation Services.                                                                                                                                                                                                                                 |                                                                                   |                                                                                   |                                                                                   |
+      | Congenital Heart Disease (CHD) Surgeries¹                                                                                                                                                                                                                                                                                                                     |                                                                                   | 20%*                                                                              |                                                                                   |
+      | Skilled Nursing Facility/Inpatient Rehabilitation Facility  Services¹                                                                                                                                                                                                                                                                                         |                                                                                   | 20%*                                                                              | 50%*                                                                              |
+      | Limited to 30 days per year in a Skilled Nursing Facility.                                                                                                                                                                                                                                                                                                    |                                                                                   |                                                                                   |                                                                                   |
+      | Limits for Skilled Nursing Facility is per inpatient stay.                                                                                                                                                                                                                                                                                                    |                                                                                   |                                                                                   |                                                                                   |
+
+      *After the Annual Medical Deductible has been met. ¹Prior Authorization Required. Refer to COC/SBN.
+    questions_and_answers:
+      - question: what is the cost share type for specialist provider in network?
+        answer: Copay
+      - question: what is the cost share type for specialist provider out of network?
+        answer: Ded/Coins
+      - question: what is the copay for specialist provider in network?
+        answer: $60
+      - question: is there a copay for specialist provider out of network?
+        answer: No
+      - question: what is the coinsurance for specialist provider out of network?
+        answer: yes, 50%
+      - question: is there a coinsurance for specialist provider in network?
+        answer: No
+      - question: what is the costshare type for in network urgent care center services?
+        answer: Copay
+      - question: what is the copay for in network urgent care center services?
+        answer: $100
+      - question: is there a copay for INN urgent care center services?
+        answer: Yes, $100
+      - question: is there a coinsurance for INN urgent care center services?
+        answer: No
+      - question: what is the costshare type for OON urgent care center services?
+        answer: Ded/Coins
+      - question: is there a copay for OON urgent care center services?
+        answer: No
+      - question: is there a coinsurance for out of network urgent care center services?
+        answer: Yes, 50%
+      - question: what is the costshare for emergency room in network?
+        answer: Copay
+      - question: what is the copay for emergency room in network?
+        answer: $350
+      - question: is there a copay for emergency room in network?
+        answer: Yes, $350
+      - question: is there a coinsurance for emergency room in network?
+        answer: No
+      - question: what is the costshare for emergency room out of network?
+        answer: Copay
+      - question: is there a copay for emergency room out of network?
+        answer: Yes, $350
+      - question: is there a coinsurance for emergency room out of network?
+        answer: No
+      - question: what is the costshare for in network inpatient stay?
+        answer: Ded/Coins
+      - question: is there a copay for in network inpatient stay?
+        answer: No
+      - question: is there a coinsurance for in network inpatient stay?
+        answer: Yes, 20%
+      - question: what is the costshare for OON inpatient stay?
+        answer: Ded/Coins
+      - question: is there a copay for OON inpatient stay?
+        answer: No
+      - question: is there a coinsurance for OON inpatient stay?
+        answer: Yes, 50%
+  - context: |
+      ## Pharmacy Benefits
+
+      | Pharmacy  Plan Details   |           |
+      |--------------------------|-----------|
+      | Pharmacy  Network        | National  |
+      | Prescription  Drug List  | Advantage |
+
+      In Network
+
+      | Annual Pharmacy  Deductible   |                                               |
+      |-------------------------------|-----------------------------------------------|
+      | Individual                    | You do not have to pay a pharmacy  deductible |
+      | Family                        | You do not have to pay a pharmacy  deductible |
+
+      |                                         | Up to a 31-day supply                    | Up to a 31-day supply    | Up to a 90-day supply          |
+      |-----------------------------------------|------------------------------------------|--------------------------|--------------------------------|
+      | Prescription  Drug Product  Tier  Level | Retail  and Specialty  Pharmacy  Network | Out-of-Network  Pharmacy | Mail Order Network  Pharmacy** |
+      | Tier 1  $                               | $10                                      | $10                      | $25                            |
+      | Tier 2  $$                              | $35                                      | $35                      | $87.50                         |
+      | Tier 3  $$$                             | $70                                      | $70                      | $175                           |
+
+    questions_and_answers:
+      - question: what is the pharmacy network?
+        answer: National
+      - question: what is the prescription drug list?
+        answer: Advantage
+      - question: what is the annual pharmacy deductible for an individual?
+        answer: You do not have to pay a pharmacy deductible
+      - question: what is the annual pharmacy deductible for a family?
+        answer: You do not have to pay a pharmacy deductible
+      - question: what is the copay for Tier 1 drugs in network?
+        answer: $10
+      - question: is there a coinsurance for tier 1 drugs in network?
+        answer: No
+      - question: what is the copay for Tier 1 drugs out of network?
+        answer: $10
+      - question: is there a coinsurance for tier 1 drugs out of network?
+        answer: No
+      - question: what is the copay for tier 2 drugs in network?
+        answer: $35
+      - question: is there a coinsurance for tier 2 drugs in network?
+        answer: No
+      - question: what is the copay for tier 2 drugs out of network?
+        answer: $35
+      - question: is there a coinsurance for tier 2 drugs out of network?
+        answer: No
+      - question: what is the copay for tier 3 drugs in network?
+        answer: $70
+      - question: is there a coinsurance for tier 3 drugs in network?
+        answer: No
+      - question: what is the copay for tier 3 drugs out of network?
+        answer: $70
+      - question: is there a coinsurance for tier 3 drugs out of network?
+        answer: No
+      - question: what is the copay for mail order network pharmacy for tier 1 drugs?
+        answer: $25
+      - question: is there a coinsurance for mail order network pharmacy for tier 1 drugs?
+        answer: No
+      - question: what is the copay for mail order network pharmacy for tier 2 drugs?
+        answer: $87.50
+      - question: is there a coinsurance for mail order network pharmacy for tier 2 drugs?
+        answer: No
+      - question: what is the copay for mail order network pharmacy for tier 3 drugs?
+        answer: $175
+      - question: is there a coinsurance for mail order network pharmacy for tier 3 drugs?
+        answer: No
+      - question: what is the value for Rx Retail INN Tier 1 copay?
+        answer: $10
+      - question: what is the value for Rx Retail INN Tier 2 copay?
+        answer: $35
+      - question: what is the value for Rx Retail INN Tier 3 copay?
+        answer: $70
+      - question: what is the value for Rx Retail OON Tier 1 copay?
+        answer: $10
+      - question: what is the value for Rx Retail OON Tier 2 copay?
+        answer: $35
+      - question: what is the value for Rx Retail OON Tier 3 copay?
+        answer: $70
+      - question: what is the value for Rx Mail Order INN Tier 1 copay?
+        answer: $25
+      - question: what is the value for Rx Mail Order INN Tier 2 copay?
+        answer: $87.50
+      - question: what is the value for Rx Mail Order INN Tier 3 copay?
+        answer: $175
+      - question: what is the value for Rx Mail Order OON Tier 1 copay?
+        answer: not given
+      - question: what is the value for Rx Mail Order OON Tier 2 copay?
+        answer: not given
+      - question: what is the value for Rx Mail Order OON Tier 3 copay?
+        answer: not given
+  - context: |
+      Administered by -
+
+      Cigna Health and Life Insurance Co.
+
+      For - McNally Industries, Inc.
+
+      Open Access Plus Plan OAP Effective - 07/01/2022
+
+      <!-- image -->
+
+      Selection of a Primary Care Provider - your plan may require or allow the designation of a primary care provider. You have the right to designate any primary care provider who participates in the network and who is available to accept you or your family members. If your plan requires designation of a primary care provider, Cigna may designate one for you until you make this designation. For information on how to select a primary care provider, and for a list of the participating primary care providers, visit www.mycigna.com or contact customer service at the phone number listed on the back of your ID card. For children, you may designate a pediatrician as the primary care provider.
+
+      Direct Access to Obstetricians and Gynecologists - You do not need prior authorization from the plan or from any other person (including a primary care provider) in order to obtain access to obstetrical or gynecological care from a health care professional in our network who specializes in obstetrics or gynecology. The health care professional, however, may be required to comply with certain procedures, including obtaining prior authorization for certain services, following a pre-approved treatment plan, or procedures for making referrals. For a list of participating health care professionals who specialize in obstetrics or gynecology, visit www.mycigna.com or contact customer service at the phone number listed on the back of your ID card.
+
+      | Plan Highlights             | In-Network                                                                                                                                                                                                                                                                                    | Out-of-Network                                                                                                                                                                                                                                                                                |
+      |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | Lifetime Maximum            | Unlimited                                                                                                                                                                                                                                                                                     | Unlimited                                                                                                                                                                                                                                                                                     |
+      | Plan Year Accumulation      | Your Plan's Deductibles, Out-of-Pockets and benefit level limits accumulate on a calendar year  basis unless otherwise stated. In addition, all plan maximums and service-specific maximums  (dollar and occurrence) cross-accumulate between In- and Out-of-Network unless otherwise  noted. | Your Plan's Deductibles, Out-of-Pockets and benefit level limits accumulate on a calendar year  basis unless otherwise stated. In addition, all plan maximums and service-specific maximums  (dollar and occurrence) cross-accumulate between In- and Out-of-Network unless otherwise  noted. |
+      | Plan Coinsurance            | Plan pays 100%                                                                                                                                                                                                                                                                                | Plan pays 70%                                                                                                                                                                                                                                                                                 |
+      | Maximum Reimbursable Charge | Not Applicable                                                                                                                                                                                                                                                                                | 110%                                                                                                                                                                                                                                                                                          |
+      | Plan Deductible             | Individual: $5,000 Family: $10,000                                                                                                                                                                                                                                                            | Individual: $10,000 Family: $20,000                                                                                                                                                                                                                                                           |
+
+      -  Only the amount you pay for in-network covered expenses counts towards your in-network deductible. Only the amount you pay for out-of-network covered expenses counts towards your out-of-network deductible.
+      -  Benefit copays/deductibles always apply before plan deductible and coinsurance.
+      -  Family members meet only their individual deductible and then their claims will be covered under the plan coinsurance; if the family deductible has been met prior to their individual deductible being met, their claims will be paid at the plan coinsurance.
+
+      Note: Services where plan deductible applies are noted with a caret (^).
+
+      07/01/2022 ASO Open Access Plus - OAP
+    questions_and_answers:
+      - question: what is the plan name?
+        answer: Open Access Plus Plan
+      - question: who is the insurance company?
+        answer: Cigna Health and Life Insurance Co.
+      - question: who is the employer?
+        answer: McNally Industries, Inc.
+      - question: when does the plan become effective?
+        answer: 07/01/2022
+      - question: what is the lifetime maximum?
+        answer: Unlimited
+      - question: what is the plan year?
+        answer: 2022
+      - question: what is the product type?
+        answer: NON-CDHP
+      - question: why is this plan non-CDHP?
+        answer: this plan do not require the combination of HDHP or HSA
+      - question: what is the product family?
+        answer: POS
+      - question: why is this plan POS?
+        answer: this plan require or allow the designation of a primary care provider
+      - question: does the plan describe an in network coinsurance?
+        answer: No
+      - question: does the plan describe an out of network coinsurance?
+        answer: Yes, 30%
+      - question: what is the individual deductible?
+        answer: $5,000
+      - question: what is the family deductible?
+        answer: $10,000
+      - question: what is maximum amount for out-of-picket single in network?
+        answer: $6,350
+      - question: what is maximum amount for out-of-picket family in network?
+        answer: $12,700
+      - question: is there an out of network deductable single?
+        answer: Yes, $10,000
+      - question: is there an out of network deductable family?
+        answer: Yes, $20,000
+      - question: what is the max out of pocket single out of network?
+        answer: $20,000
+      - question: what is the max out of pocket family out of network?
+        answer: $40,000
+  - context: |
+      ## Plan Out-of-Pocket Maximum
+
+      Individual: $6,350
+
+      Family: $12,700
+
+      Individual: $20,000 Family: $40,000
+
+      -  Only the amount you pay for in-network covered expenses counts toward your in-network out-of-pocket maximum. Only the amount you pay for out-of-network covered expenses counts toward your out-of-network out-of-pocket maximum.
+      -  Plan deductible contributes towards your out-of-pocket maximum.
+      -  All benefit copays/deductibles contribute towards your out-of-pocket maximum.
+      -  Covered expenses that count towards your out-of-pocket maximum include customer paid coinsurance and charges for Mental Health and Substance Use Disorder. Out-of-network non-compliance penalties or charges in excess of Maximum Reimbursable Charge do not contribute towards the out-of-pocket maximum.
+      -  After each eligible family member meets his or her individual out-of-pocket maximum, the plan will pay 100% of their covered expenses. Or, after the family out-of-pocket maximum has been met, the plan will pay 100% of each eligible family member's covered expenses.
+      -  This plan includes a combined Medical/Pharmacy out-of-pocket maximum. Once the combined Medical/Pharmacy out-of-pocket maximum is met, the plan will pay 100% of covered Medical and Pharmacy expenses for the remainder of the plan year.
+    questions_and_answers:
+      - question: what is the individual out-of-pocket maximum?
+        answer: $6,350
+      - question: what is the family out-of-pocket maximum?
+        answer: $12,700
+      - question: what is the individual out-of-pocket maximum for out-of-network?
+        answer: $20,000
+      - question: what is the family out-of-pocket maximum for out-of-network?
+        answer: $40,000
+      - question: is this plan embedded?
+        answer: yes
+      - question: why is this plan considered embedded?
+        answer: the individual and family out-of-pocket maximums are separate for in-network and out-of-network services
+  - context: |
+        ## In-Network
+
+        Out-of-Network
+
+        Note: Services where plan deductible applies are noted with a caret (^). Benefit copays/deductibles always apply before plan deductible.
+        ## Physician Services - Office Visits
+
+        Primary Care Physician (PCP) Services/Office Visit
+
+        $35 copay, and plan pays 100%
+
+        Plan pays 70% ^
+
+        Specialty Care Physician Services/Office Visit
+
+        $70 copay, and plan pays 100%
+
+        Plan pays 70% ^
+
+        Surgery Performed in Physician's Office
+
+        Plan pays 100%
+
+        Plan pays 70% ^
+    questions_and_answers:
+      - question: what is the copay for primary care physician services?
+        answer: $35
+      - question: what is the copay for specialty care physician services?
+        answer: $70
+      - question: what is the coinsurance for primary care physician services?
+        answer: 100%
+      - question: what is the coinsurance for specialty care physician services?
+        answer: 100%
+      - question: what is the coinsurance for surgery performed in physician's office?
+        answer: 100%
+      - question: what is the costshare type for in network PCP?
+        answer: copay
+      - question: what is the INN copay for PCP?
+        answer: $35
+      - question: is there a coinsurance for INN PCP?
+        answer: No
+      - question: what is the costshare type for out of network PCP?
+        answer: Ded/Coins
+      - question: what is the OON coinsurance for PCP?
+        answer: 30%
+      - question: is there a copay for OON PCP?
+        answer: No
+      - question: what is the costshare type for in network specialist?
+        answer: copay
+      - question: what is the INN copay for specialist?
+        answer: $70
+      - question: is there a coinsurance for INN specialist?
+        answer: No
+      - question: what is the costshare type for out of network specialist?
+        answer: Ded/Coins
+      - question: what is the OON coinsurance for specialist?
+        answer: 30%
+      - question: is there a copay for OON specialist?
+        answer: No
+  - context: |
+        ASO Open Access Plus - OAP
+
+        | Benefit                                                                                                                                                          | In-Network                                                                                                                                                       | Out-of-Network                                                                                                                                                   |
+        |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+        | Note: Services where plan deductible applies are noted with a caret (^). Benefit copays/deductibles always apply before plan deductible. Convenience Care Clinic | Note: Services where plan deductible applies are noted with a caret (^). Benefit copays/deductibles always apply before plan deductible. Convenience Care Clinic | Note: Services where plan deductible applies are noted with a caret (^). Benefit copays/deductibles always apply before plan deductible. Convenience Care Clinic |
+        | Convenience Care Clinic                                                                                                                                          | $35 copay, and plan pays 100%                                                                                                                                    | Plan pays 70% ^                                                                                                                                                  |
+        | Preventive Care                                                                                                                                                  |                                                                                                                                                                  |                                                                                                                                                                  |
+        | Preventive Care Office Visit                                                                                                                                     | Plan pays 100%                                                                                                                                                   | Not Covered                                                                                                                                                      |
+        | Preventive Services                                                                                                                                              | Plan pays 100%                                                                                                                                                   | Not Covered                                                                                                                                                      |
+        |  Includes preventive Mammograms, Papanicolaou (Pap), Prostate Specific Antigen (PSA) tests and colorectal screenings.                                          | Diagnostic-related services are covered at the same level of benefits as other x-ray and lab services, based on place of service.                                |                                                                                                                                                                  |
+        | Immunizations                                                                                                                                                    | Plan pays 100%                                                                                                                                                   | Not Covered                                                                                                                                                      |
+        | Inpatient                                                                                                                                                        |                                                                                                                                                                  |                                                                                                                                                                  |
+        | Inpatient Hospital Facility Services                                                                                                                             | Plan pays 100% ^                                                                                                                                                 | Plan pays 70% ^                                                                                                                                                  |
+        | Note:  Includes all Lab and Radiology services, including Advanced Radiological Imaging as well as Medical Specialty Drugs                                       |                                                                                                                                                                  |                                                                                                                                                                  |
+        | Inpatient Hospital Physician's Visit/Consultation                                                                                                                | Plan pays 100% ^                                                                                                                                                 | Plan pays 70% ^                                                                                                                                                  |
+        | Inpatient Professional Services                                                                                                                                  | Plan pays 100% ^                                                                                                                                                 | Plan pays 70% ^                                                                                                                                                  |
+        |  For services performed by Surgeons, Radiologists, Pathologists and Anesthesiologists                                                                           |                                                                                                                                                                  |                                                                                                                                                                  |
+        | Outpatient                                                                                                                                                       |                                                                                                                                                                  |                                                                                                                                                                  |
+        | Outpatient Facility Services                                                                                                                                     | Plan pays 100% ^                                                                                                                                                 | Plan pays 70% ^                                                                                                                                                  |
+        | Outpatient Professional Services                                                                                                                                 | Plan pays 100% ^                                                                                                                                                 | Plan pays 70% ^                                                                                                                                                  |
+        |  For services performed by Surgeons, Radiologists, Pathologists and Anesthesiologists                                                                           |  For services performed by Surgeons, Radiologists, Pathologists and Anesthesiologists                                                                           |  For services performed by Surgeons, Radiologists, Pathologists and Anesthesiologists                                                                           |
+        | Emergency Services                                                                                                                                               |                                                                                                                                                                  |                                                                                                                                                                  |
+        | Emergency Room  Includes ER Physician Charges, Lab and Radiology  including Advanced Radiological Imaging (ARI)                                                 |                                                                                                                                                                  |                                                                                                                                                                  |
+        |  Per visit copay is waived if admitted.                                                                                                                         |                                                                                                                                                                  | $250 copay, and plan pays 100%                                                                                                                                   |
+        | Urgent Care Facility                                                                                                                                             |                                                                                                                                                                  |                                                                                                                                                                  |
+        |  Includes Physician Charges, Lab and Radiology                                                                                                                  | $75 copay, and plan pays 100%                                                                                                                                    | Plan pays 70% ^                                                                                                                                                  |
+        | Ambulance                                                                                                                                                        |                                                                                                                                                                  | Plan pays 100% ^                                                                                                                                                 |
+        |                                                                                                                                                                  | Ambulance services used as non-emergency transportation (e.g., transportation from hospital back home) generally are not covered.                                | Ambulance services used as non-emergency transportation (e.g., transportation from hospital back home) generally are not covered.                                |
+        | Inpatient Services at Other Health Care Facilities                                                                                                               | Inpatient Services at Other Health Care Facilities                                                                                                               | Inpatient Services at Other Health Care Facilities                                                                                                               |
+        | Skilled Nursing Facility, Rehabilitation Hospital, Sub-Acute  Facilities                                                                                         | Plan pays 100% ^                                                                                                                                                 | Plan pays 70% ^                                                                                                                                                  |
+        |  Annual Limit: 60 days                                                                                                                                          |                                                                                                                                                                  |                                                                                                                                                                  |
+    questions_and_answers:
+      - question: what is the costshare type for in network emergency room?
+        answer: copay
+      - question: what is the INN copay for emergency room?
+        answer: $250
+      - question: is there a coinsurance for INN emergency room?
+        answer: No
+      - question: what is the costshare type for out of network emergency room?
+        answer: copay
+      - question: what is the OON copay for emergency room?
+        answer: $250
+      - question: is there a coinsurance for OON emergency room?
+        answer: No
+      - question: what is the costshare type for in network urgent care?
+        answer: copay
+      - question: what is the copay for in network urgent care?
+        answer: $75
+      - question: is there a coinsurance for in network urgent care?
+        answer: No
+      - question: what is the costshare type for out of network urgent care?
+        answer: Ded/Coins
+      - question: what is the OON coinsurance for urgent care?
+        answer: 30%
+      - question: is there a copay for OON urgent care?
+        answer: No 
+      - question: what is the costshare type for in network inpatient stay?
+        answer: Ded, then CIF
+      - question: what is the costshare type for out of network inpatient stay?
+        answer: Ded/Coins
+      - question: what is the coinsurance for out of network inpatient stay?
+        answer: 30%
+      - question: what is the costshare type for in network outpatient hospital?
+        answer: Ded, then CIF
+      - question: what is the costshare type for out of network outpatient hospital?
+        answer: Ded/Coins
+      - question: what is the coinsurance for out of network outpatient hospital?
+        answer: 30%
+  - context: |
+      ## Virtual Care
+
+      ## Dedicated Virtual Providers
+
+      ## Urgent Virtual Care Services
+
+      $35 copay, and plan pays 100%
+
+      Not Covered
+
+      -  Dedicated Virtual Providers may deliver services that are payable under other benefits (e.g., Preventive Care, Primary Care Physician, Behavioral; Dermatology/Specialty Care Physician).
+      -  Lab services supporting a virtual visit must be obtained through dedicated labs.
+      -  Includes charges for the delivery of medical and health-related services and consultations by dedicated virtual providers as medically appropriate through audio, video, and secure internet-based technologies.
+
+      ## Virtual Physician Services - Office Visits
+
+      Primary Care Physician (PCP) Services/Office Visit
+
+      $35 copay, and plan pays 100%
+
+      Plan pays 70% ^
+    questions_and_answers:
+      - question: what is the costshare type for in network virtual visits PCP?
+        answer: Not Covered
+      - question: what is the costshare type for out of network virtual visits PCP?
+        answer: Not Covered
+  - context: |
+      ## Pharmacy Cost Share
+
+      -  Retail - up to 90-day supply (except Specialty up to 30-day supply)
+      -  Home Delivery - up to 90-day supply (except Specialty up to 30-day supply)
+      -  If you receive a supply of 34 days or less at home delivery of a Specialty Prescription Drug, the Specialty home delivery cost share will be adjusted to reflect a Retail (per 30-day supply) cost share.
+
+      Retail (per 30-day supply): Generic: You pay $10 Preferred Brand: You pay $50 Non-Preferred Brand: You pay $75
+
+      Retail (per 90-day supply):
+
+      Generic: You pay $30 Preferred Brand: You pay $150 Non-Preferred Brand: You pay $225
+
+      Home Delivery (per 90-day supply): Generic: You pay $25 Preferred Brand: You pay $125 Non-Preferred Brand: You pay $188
+
+      -  Retail drugs for a 30 day supply may be obtained In-Network at a wide range of pharmacies across the nation although prescriptions for a 90 day supply (such as maintenance drugs) will be available at select network pharmacies.
+      -  This plan will not cover out-of-network pharmacy benefits.
+      -  Cigna 90 Now Program: You can choose to fill your medications in a 30- or 90-day supply. If you choose to fill a 30-day prescription, it can be filled at any network retail pharmacy or network home delivery pharmacy. If you choose to fill a 90-day prescription, it must be filled at a 90-day network retail pharmacy or network home delivery pharmacy to be covered by the plan.
+      -  Specialty medications are used to treat an underlying disease which is considered to be rare and chronic including, but not limited to, multiple sclerosis, hepatitis C or rheumatoid arthritis. Specialty Drugs may include high cost medications as well as medications that may require special handling and close supervision when being administered.
+      -  When you request a brand drug, you pay the brand cost share plus the cost difference between the brand and generic drugs up to the cost of the brand drug (unless the physician indicates "Dispense As Written" DAW) (MAC B).
+      -  Exclusive specialty home delivery: Specialty medications must be filled through home delivery; otherwise you pay the entire cost of the prescription upon your first fill. Some exceptions may apply.
+      -  If you use a manufacturer coupon to pay for some or all of the cost of a medication, the value of the coupon may not apply towards meeting your plan deductible or out-of-pocket maximum, if any.
+      -  Your pharmacy benefits share an out-of-pocket maximum with the medical/behavioral benefits.
+    questions_and_answers:
+      - question: what is the copay for rx retail in network tier 1?
+        answer: $10
+      - question: what is the copay for rx retail in network tier 2?
+        answer: $50
+      - question: what is the copay for rx retail in network tier 3?
+        answer: $75
+      - question: what is the copay for rx mail order in network tier 1?
+        answer: $25
+      - question: what is the copay for rx mail order in network tier 2?
+        answer: $125
+      - question: what is the copay for rx mail order in network tier 3?
+        answer: $188
+document_outline: |
+  Use this benefit summary to learn more about this plan's benefits, ways you can get help managing costs and how you may get more out of this health plan.
+document:
+  repo: https://github.com/diego-torres/benefit-summary
+  commit: main
+  patterns:
+    - 068Hq00000fwrRuIAI.md
+    - 068Hq00000fwsWIIAY.md
