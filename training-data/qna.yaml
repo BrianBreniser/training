@@ -1,4 +1,4 @@
-version: 1
+version: 3
 domain: insurance
 created_by: dtorresf
 seed_examples:
@@ -28,21 +28,21 @@ seed_examples:
       - question: what is the network and out-of-network benefits?
         answer: Network and out-of-network benefits
       - question: Is the primary care physician (PCP) required?
-        answer: No
+        answer: "No"
       - question: Are the referrals required?
-        answer: No
+        answer: "No"
       - question: Is the preventive care covered at 100%?
-        answer: Yes
+        answer: "Yes"
       - question: Are there pharmacy benefits?
-        answer: Yes
+        answer: "Yes"
       - question: Are the tier 1 providers included?
-        answer: Yes
+        answer: "Yes"
       - question: Are freestanding centers covered?
-        answer: No
+        answer: "No"
       - question: Is the health savings account (HSA) included?
-        answer: No
+        answer: "No"
       - question: Is this plan CDHP?
-        answer: No
+        answer: "No"
       - question: why is this plan considrede a NON-CDHP?
         answer: HSA or HDHP is not included or requested in the plan
       - question: What is the product type?
@@ -80,7 +80,6 @@ seed_examples:
       All individual out-of-pocket maximum amounts will count toward the family out-of-pocket maximum, but an individual will not have to pay more than the individual out-of-pocket maximum amount.
 
       Once you've met your deductible, you start sharing costs with your plan - coinsurance. You continue paying a portion of the expense until you reach your out-ofpocket limit. From there, your plan pays 100% of allowed amounts for the rest of the plan year.
-    
     questions_and_answers:
       - question: What is the annual medical deductible for an individual in-network?
         answer: $3,000
@@ -99,13 +98,13 @@ seed_examples:
       - question: What is the annual out-of-pocket limit for a family out-of-network?
         answer: $25,400
       - question: Is this plan embedded?
-        answer: Yes
+        answer: "Yes"
       - question: why is this considered an embedded plan?
         answer: All individual deductible amounts will count toward the family deductible, but an individual will not have to pay more than the individual deductible amount.
       - question: What is the product family?
         answer: PPO
-  - context: | 
-      ## What You Pay for Services | Copays ($) and Coinsurance (%) for  Covered Health Care Services                                                                                                                                                                                                                                                                       | Designated Network   | Network   | Out-of-Network   |
+  - context: |
+      ## What You Pay for Services | Copays ($) and Coinsurance (%) for  Covered Health Care Services                                                                                                                                                                                                                                          | Designated Network   | Network   | Out-of-Network   |
       |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------|------------------|
       | Preventive Care Services                                                                                                                                                                                                                                                                                                               |                      |           |                  |
       | Preventive Care Services                                                                                                                                                                                                                                                                                                               |                      | No copay  | 50%*             |
@@ -138,11 +137,11 @@ seed_examples:
       - question: What is the INN PCP copay?
         answer: $30
       - question: Is there a co-insurance INN PCP?
-        answer: No
+        answer: "No"
       - question: What is the cost-share for OON PCP?
         answer: Ded/Coins
       - question: is there a copay for OON PCP?
-        answer: No
+        answer: "No"
       - question: What is the coinsurance for OON PCP?
         answer: 50%
       - question: what is the costshare for in network virtual visits PCP?
@@ -150,13 +149,13 @@ seed_examples:
       - question: is there a copay for in network virtual visits PCP?
         answer: Yes, $30
       - question: is there a coinsurance for in network virtual visits PCP?
-        answer: No
+        answer: "No"
       - question: what word is used here for virtual visits PCP?
         answer: Telehealth
       - question: what is the costshare for OON virtual visits PCP?
         answer: Ded/Coins
       - question: is there a copay for OON virtual visits PCP?
-        answer: No
+        answer: "No"
       - question: is there a coinsurance for OON virtual visits PCP?
         answer: Yes, 50%
   - context: |
@@ -187,13 +186,13 @@ seed_examples:
       - question: what is the in network costshare type for outpatient hospital?
         answer: Ded/Coins
       - question: is there a copay for INN outpatient hospital?
-        answer: No
+        answer: "No"
       - question: is there a coinsurance for INN outpatient hospital?
         answer: Yes, 20%
       - question: what is the costshare type for OON outpatient hospital?
         answer: Ded/Coins
       - question: is there a copay for OON outpatient hospital?
-        answer: No
+        answer: "No"
       - question: is there a coinsurance for OON outpatient hospital?
         answer: Yes, 50%
   - context: |
@@ -234,11 +233,11 @@ seed_examples:
       - question: what is the copay for specialist provider in network?
         answer: $60
       - question: is there a copay for specialist provider out of network?
-        answer: No
+        answer: "No"
       - question: what is the coinsurance for specialist provider out of network?
         answer: yes, 50%
       - question: is there a coinsurance for specialist provider in network?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for in network urgent care center services?
         answer: Copay
       - question: what is the copay for in network urgent care center services?
@@ -246,11 +245,11 @@ seed_examples:
       - question: is there a copay for INN urgent care center services?
         answer: Yes, $100
       - question: is there a coinsurance for INN urgent care center services?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for OON urgent care center services?
         answer: Ded/Coins
       - question: is there a copay for OON urgent care center services?
-        answer: No
+        answer: "No"
       - question: is there a coinsurance for out of network urgent care center services?
         answer: Yes, 50%
       - question: what is the costshare for emergency room in network?
@@ -260,23 +259,23 @@ seed_examples:
       - question: is there a copay for emergency room in network?
         answer: Yes, $350
       - question: is there a coinsurance for emergency room in network?
-        answer: No
+        answer: "No"
       - question: what is the costshare for emergency room out of network?
         answer: Copay
       - question: is there a copay for emergency room out of network?
         answer: Yes, $350
       - question: is there a coinsurance for emergency room out of network?
-        answer: No
+        answer: "No"
       - question: what is the costshare for in network inpatient stay?
         answer: Ded/Coins
       - question: is there a copay for in network inpatient stay?
-        answer: No
+        answer: "No"
       - question: is there a coinsurance for in network inpatient stay?
         answer: Yes, 20%
       - question: what is the costshare for OON inpatient stay?
         answer: Ded/Coins
       - question: is there a copay for OON inpatient stay?
-        answer: No
+        answer: "No"
       - question: is there a coinsurance for OON inpatient stay?
         answer: Yes, 50%
   - context: |
@@ -313,39 +312,39 @@ seed_examples:
       - question: what is the copay for Tier 1 drugs in network?
         answer: $10
       - question: is there a coinsurance for tier 1 drugs in network?
-        answer: No
+        answer: "No"
       - question: what is the copay for Tier 1 drugs out of network?
         answer: $10
       - question: is there a coinsurance for tier 1 drugs out of network?
-        answer: No
+        answer: "No"
       - question: what is the copay for tier 2 drugs in network?
         answer: $35
       - question: is there a coinsurance for tier 2 drugs in network?
-        answer: No
+        answer: "No"
       - question: what is the copay for tier 2 drugs out of network?
         answer: $35
       - question: is there a coinsurance for tier 2 drugs out of network?
-        answer: No
+        answer: "No"
       - question: what is the copay for tier 3 drugs in network?
         answer: $70
       - question: is there a coinsurance for tier 3 drugs in network?
-        answer: No
+        answer: "No"
       - question: what is the copay for tier 3 drugs out of network?
         answer: $70
       - question: is there a coinsurance for tier 3 drugs out of network?
-        answer: No
+        answer: "No"
       - question: what is the copay for mail order network pharmacy for tier 1 drugs?
         answer: $25
       - question: is there a coinsurance for mail order network pharmacy for tier 1 drugs?
-        answer: No
+        answer: "No"
       - question: what is the copay for mail order network pharmacy for tier 2 drugs?
         answer: $87.50
       - question: is there a coinsurance for mail order network pharmacy for tier 2 drugs?
-        answer: No
+        answer: "No"
       - question: what is the copay for mail order network pharmacy for tier 3 drugs?
         answer: $175
       - question: is there a coinsurance for mail order network pharmacy for tier 3 drugs?
-        answer: No
+        answer: "No"
       - question: what is the value for Rx Retail INN Tier 1 copay?
         answer: $10
       - question: what is the value for Rx Retail INN Tier 2 copay?
@@ -412,7 +411,7 @@ seed_examples:
       - question: what is the lifetime maximum?
         answer: Unlimited
       - question: what is the plan year?
-        answer: 2022
+        answer: "2022"
       - question: what is the product type?
         answer: NON-CDHP
       - question: why is this plan non-CDHP?
@@ -422,7 +421,7 @@ seed_examples:
       - question: why is this plan POS?
         answer: this plan require or allow the designation of a primary care provider
       - question: does the plan describe an in network coinsurance?
-        answer: No
+        answer: "No"
       - question: does the plan describe an out of network coinsurance?
         answer: Yes, 30%
       - question: what is the individual deductible?
@@ -466,7 +465,7 @@ seed_examples:
       - question: what is the family out-of-pocket maximum for out-of-network?
         answer: $40,000
       - question: is this plan embedded?
-        answer: yes
+        answer: "Yes"
       - question: why is this plan considered embedded?
         answer: the individual and family out-of-pocket maximums are separate for in-network and out-of-network services
   - context: |
@@ -510,25 +509,25 @@ seed_examples:
       - question: what is the INN copay for PCP?
         answer: $35
       - question: is there a coinsurance for INN PCP?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for out of network PCP?
         answer: Ded/Coins
       - question: what is the OON coinsurance for PCP?
         answer: 30%
       - question: is there a copay for OON PCP?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for in network specialist?
         answer: copay
       - question: what is the INN copay for specialist?
         answer: $70
       - question: is there a coinsurance for INN specialist?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for out of network specialist?
         answer: Ded/Coins
       - question: what is the OON coinsurance for specialist?
         answer: 30%
       - question: is there a copay for OON specialist?
-        answer: No
+        answer: "No"
   - context: |
         ASO Open Access Plus - OAP
 
@@ -567,25 +566,25 @@ seed_examples:
       - question: what is the INN copay for emergency room?
         answer: $250
       - question: is there a coinsurance for INN emergency room?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for out of network emergency room?
         answer: copay
       - question: what is the OON copay for emergency room?
         answer: $250
       - question: is there a coinsurance for OON emergency room?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for in network urgent care?
         answer: copay
       - question: what is the copay for in network urgent care?
         answer: $75
       - question: is there a coinsurance for in network urgent care?
-        answer: No
+        answer: "No"
       - question: what is the costshare type for out of network urgent care?
         answer: Ded/Coins
       - question: what is the OON coinsurance for urgent care?
         answer: 30%
       - question: is there a copay for OON urgent care?
-        answer: No 
+        answer: "No"
       - question: what is the costshare type for in network inpatient stay?
         answer: Ded, then CIF
       - question: what is the costshare type for out of network inpatient stay?
@@ -625,6 +624,8 @@ seed_examples:
         answer: Not Covered
       - question: what is the costshare type for out of network virtual visits PCP?
         answer: Not Covered
+      - question: what is the costshare for a PCP visit
+        answer: $35 copay, and plan pays 100%
   - context: |
       ## Pharmacy Cost Share
 
@@ -664,8 +665,16 @@ seed_examples:
 document_outline: |
   Use this benefit summary to learn more about this plan's benefits, ways you can get help managing costs and how you may get more out of this health plan.
 document:
-  repo: https://github.com/diego-torres/benefit-summary
-  commit: main
+  repo: https://github.com/BrianBreniser/elevance_training
+  commit: 58a47fd3b1581afcc5a12621488c64ec1b09ea06
   patterns:
-    - 068Hq00000fwrRuIAI.md
-    - 068Hq00000fwsWIIAY.md
+    - training-data/068Hq00000fwrRuIAI.md
+    - training-data/068Hq00000fwrS1IAI.md
+    - training-data/068Hq00000fwrS3IAI.md
+    - training-data/068Hq00000fwsWIIAY.md
+    - training-data/068Hq00000fwV9gIAE.md
+    - training-data/068Hq00000fwVA2IAM.md
+    - training-data/068Hq00000fwVEMIA2.md
+    - training-data/068Hq00000fwyduIAA.md
+    - training-data/068Hq00000fx0VTIAY.md
+    - training-data/068Hq00000fx58hIAA.md
