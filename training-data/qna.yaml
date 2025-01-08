@@ -665,7 +665,7 @@ seed_examples:
 document_outline: |
   Use this benefit summary to learn more about this plan's benefits, ways you can get help managing costs and how you may get more out of this health plan.
 document:
-  repo: https://github.com/BrianBreniser/elevance_training
+  repo: https://github.com/BrianBreniser/training
   commit: 58a47fd3b1581afcc5a12621488c64ec1b09ea06
   patterns:
     - training-data/068Hq00000fwrRuIAI.md
